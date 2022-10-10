@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- fevicon -->
+    <link rel="icon" href="images/favicon (2) (1).ico">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+        media="screen">
+
+    <title>Farm tour</title>
+    <link rel="stylesheet" href="farmtour.scss">
+    <style>
+        .grid-container {
+            padding-top: 200px;
+            columns: 5 200px;
+            column-gap: 1.5rem;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .grid-container div {
+            width: 150px;
+            margin: 0 1.5rem 1.5rem 0;
+            display: inline-block;
+            width: 100%;
+            border: solid 2px black;
+            padding: 5px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+            transition: all 0.25s ease-in-out;
+        }
+
+        .grid-container div:hover img {
+            filter: grayscale(0);
+        }
+
+        .grid-container div:hover {
+            border-color: coral;
+        }
+
+        .grid-container div img {
+            width: 100%;
+            filter: grayscale(100%);
+            border-radius: 5px;
+            transition: all 0.25s ease-in-out;
+        }
+
+        .grid-container div p {
+            margin: 5px 0;
+            padding: 0;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .header {
+
+            height: 150px;
+            background: #f4eae3;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <!-- header inner -->
+        <div class="header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                        <div class="full">
+                            <div class="center-desk">
+                                <div class="logo">
+                                    <a href="index.html"><img src="images/horizontal_farmshelogo.png" alt="#" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                        <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarsExample04">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item ">
+                                        <a class="nav-link" href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="about.html">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="fruits.html">Our Fruits</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="shop.html">Shop</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link farm_tour active" href="farmtour.html">Farm Tour</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">FeedBack</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="grid-container">
+        <div>
+            <img class='grid-item grid-item-1'
+                src='https://images.unsplash.com/photo-1553433342-c838ed72f431?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWFuZ28lMjBmYXJtfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'
+                alt=''>
+            <p>"Patience is bitter, but its fruit is sweet."</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-2'
+                src='https://images.unsplash.com/photo-1509826069158-41fafc8a4a42?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDZ8fG1hbmdvJTIwZmFybXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'
+                alt=''>
+            <p>"A table, a chair, a bowl of fruit and a violin; what else does a man need to be happy?"</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-3'
+                src='https://images.unsplash.com/photo-1492496913980-501348b61469?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDl8fG1hbmdvJTIwZmFybXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'
+                alt=''>
+            <p>"Life is uncertain. Eat dessert first."</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-4'
+                src='https://images.unsplash.com/photo-1536657464919-892534f60d6e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80'
+                alt=''>
+            <p>"Knowledge is knowing that a tomato is a fruit. Wisdom is knowing not to put it in a fruit salad"</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-5'
+                src='https://images.unsplash.com/photo-1551649001-9c071b61f26c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fG1hbmdvfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'
+                alt=''>
+            <p>"The trees that are slow to grow bear the best fruit"</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-6'
+                src='https://images.unsplash.com/photo-1629358821360-500f89a5a907?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fG1hbmdvfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'
+                alt=''>
+            <p>"The fruit derived from labor is the sweetest of pleasures"</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-7'
+                src='https://images.unsplash.com/photo-1622955658214-d05c1c6fcf84?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fG1hbmdvfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'
+                alt=''>
+            <p>"Time flies like an arrow - but fruit flies like a banana"</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-8'
+                src='https://images.unsplash.com/photo-1573605954553-a39394846cfc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c3VnYXJjYW5lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'
+                alt=''>
+            <p>"The fruit of your own hard work is the sweetest."</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-9'
+                src='https://images.unsplash.com/photo-1631578114473-1a274776a08b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHN1Z2FyY2FuZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'
+                alt=''>
+            <p>"The roots of education are bitter, but the fruit is sweet"</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-10'
+                src='https://images.unsplash.com/photo-1447624799968-c704f86dc931?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fG1hbmdvJTIwZmFybXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'
+                alt=''>
+            <p>"One that would have the fruit must climb the tree."</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-11'
+                src='https://images.unsplash.com/photo-1553433342-c838ed72f431?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWFuZ28lMjBmYXJtfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'
+                alt=''>
+            <p>"Hello, fruit."</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-12'
+                src='https://images.unsplash.com/photo-1603833665858-e61d17a86224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YmFuYW5hfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'
+                alt=''>
+            <p>"The day you plant the seed is not the day you eat the fruit"</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-13'
+                src='https://images.unsplash.com/photo-1620036924477-c3d6e9ce36fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGJhbmFuYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'
+                alt=''>
+            <p>"A bad tree cannot bear good fruit"</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-14'
+                src='https://images.unsplash.com/photo-1610911434407-54dbc487af49?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDB8fGJhbmFuYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'
+                alt=''>
+            <p>"Love is a fruit in season at all times"</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-15'
+                src='https://images.unsplash.com/photo-1558350186-496385970b0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjV8fGJhbmFuYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'
+                alt=''>
+            <p>"You are what you eat. Eat fruit"</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-16'
+                src='https://images.unsplash.com/photo-1537191072641-5e19cc173c6a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y29jb251dHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'
+                alt=''>
+            <p>"Fruit is the spirit of joy"</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-17'
+                src='https://images.unsplash.com/photo-1553787434-dd9eb4ea4d0b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y29jb251dHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'
+                alt=''>
+            <p>"Be a fruit look in a world full of cheerios"</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-18'
+                src='https://images.unsplash.com/photo-1514125669375-59ee3985d08b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Y29jb251dHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'
+                alt=''>
+            <p>"Patience is bitter, but its fruit is sweet"</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-19'
+                src='https://images.unsplash.com/photo-1509817775895-79efefb813d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNvY29udXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60'
+                alt=''>
+            <p>"The fruits of your labor will bare the fruits of your success"</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-20'
+                src='https://images.unsplash.com/photo-1580629616418-567f7d0ae5c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGNvY29udXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60'
+                alt=''>
+            <p>"The fruits of my labor, I enjoy them while they are still ripe"</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-1'
+                src='https://images.unsplash.com/photo-1553433342-c838ed72f431?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWFuZ28lMjBmYXJtfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'
+                alt=''>
+            <p>"Patience is bitter, but its fruit is sweet."</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-2'
+                src='https://images.unsplash.com/photo-1509826069158-41fafc8a4a42?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDZ8fG1hbmdvJTIwZmFybXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'
+                alt=''>
+            <p>"A table, a chair, a bowl of fruit and a violin; what else does a man need to be happy?"</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-3'
+                src='https://images.unsplash.com/photo-1492496913980-501348b61469?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDl8fG1hbmdvJTIwZmFybXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'
+                alt=''>
+            <p>"Life is uncertain. Eat dessert first."</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-4'
+                src='https://images.unsplash.com/photo-1536657464919-892534f60d6e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80'
+                alt=''>
+            <p>"Knowledge is knowing that a tomato is a fruit. Wisdom is knowing not to put it in a fruit salad"</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-5'
+                src='https://images.unsplash.com/photo-1551649001-9c071b61f26c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fG1hbmdvfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'
+                alt=''>
+            <p>"The trees that are slow to grow bear the best fruit"</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-6'
+                src='https://images.unsplash.com/photo-1629358821360-500f89a5a907?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fG1hbmdvfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'
+                alt=''>
+            <p>"The fruit derived from labor is the sweetest of pleasures"</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-7'
+                src='https://images.unsplash.com/photo-1622955658214-d05c1c6fcf84?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fG1hbmdvfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'
+                alt=''>
+            <p>"Time flies like an arrow - but fruit flies like a banana"</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-8'
+                src='https://images.unsplash.com/photo-1573605954553-a39394846cfc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c3VnYXJjYW5lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'
+                alt=''>
+            <p>"The fruit of your own hard work is the sweetest."</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-9'
+                src='https://images.unsplash.com/photo-1631578114473-1a274776a08b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHN1Z2FyY2FuZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'
+                alt=''>
+            <p>"The roots of education are bitter, but the fruit is sweet"</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-10'
+                src='https://images.unsplash.com/photo-1447624799968-c704f86dc931?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fG1hbmdvJTIwZmFybXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'
+                alt=''>
+            <p>"One that would have the fruit must climb the tree."</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-11'
+                src='https://images.unsplash.com/photo-1553433342-c838ed72f431?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWFuZ28lMjBmYXJtfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'
+                alt=''>
+            <p>"Hello, fruit."</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-12'
+                src='https://images.unsplash.com/photo-1603833665858-e61d17a86224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YmFuYW5hfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'
+                alt=''>
+            <p>"The day you plant the seed is not the day you eat the fruit"</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-13'
+                src='https://images.unsplash.com/photo-1620036924477-c3d6e9ce36fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGJhbmFuYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'
+                alt=''>
+            <p>"A bad tree cannot bear good fruit"</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-14'
+                src='https://images.unsplash.com/photo-1610911434407-54dbc487af49?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDB8fGJhbmFuYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'
+                alt=''>
+            <p>"Love is a fruit in season at all times"</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-15'
+                src='https://images.unsplash.com/photo-1558350186-496385970b0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjV8fGJhbmFuYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'
+                alt=''>
+            <p>"You are what you eat. Eat fruit"</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-16'
+                src='https://images.unsplash.com/photo-1537191072641-5e19cc173c6a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y29jb251dHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'
+                alt=''>
+            <p>"Fruit is the spirit of joy"</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-17'
+                src='https://images.unsplash.com/photo-1553787434-dd9eb4ea4d0b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y29jb251dHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'
+                alt=''>
+            <p>"Be a fruit look in a world full of cheerios"</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-18'
+                src='https://images.unsplash.com/photo-1514125669375-59ee3985d08b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Y29jb251dHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'
+                alt=''>
+            <p>"Patience is bitter, but its fruit is sweet"</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-19'
+                src='https://images.unsplash.com/photo-1509817775895-79efefb813d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNvY29udXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60'
+                alt=''>
+            <p>"The fruits of your labor will bare the fruits of your success"</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-20'
+                src='https://images.unsplash.com/photo-1580629616418-567f7d0ae5c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGNvY29udXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60'
+                alt=''>
+            <p>"The fruits of my labor, I enjoy them while they are still ripe"</p>
+        </div>
+
+    </div>
+
+    <!--  footer -->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                        <ul class="location_icon">
+                            <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a><br> Anand,Gujarat
+                            </li>
+                            <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a><br> +91 8956534879</li>
+                            <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a><br> farmse@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>© 2022 All Rights Reserved.Design by HARSH PATEL</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+</body>
+
+</html>

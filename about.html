@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- mobile metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- site metas -->
+   <title>About Us</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- bootstrap css -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <!-- style css -->
+   <link rel="stylesheet" href="css/style.css">
+   <!-- Responsive-->
+   <link rel="stylesheet" href="css/responsive.css">
+   <!-- fevicon -->
+   <link rel="icon" href="images/favicon (2) (1).ico">
+   <!-- Scrollbar Custom CSS -->
+   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+   <!-- Tweaks for older IEs-->
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+      media="screen">
+
+   <style>
+      @charset "utf-8";
+      @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
+      @import url('https://fonts.googleapis.com/css?family=Roboto');
+      /*=============================================
+Css Indexing
+===============================================
+1 Base CSS
+
+===============================================*/
+
+      /*===========================================
+Base CSS
+============================================*/
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {}
+
+      html {
+         height: 100%;
+      }
+
+      body {
+         height: 100%;
+         font-family: 'Quicksand', sans-serif;
+         color: rgba(0, 0, 0, 0.6);
+         box-sizing: border-box;
+         font-size: 14px;
+         overflow: hidden;
+         background: #fafafa;
+      }
+
+      label {
+         padding: 0;
+         margin: 0;
+      }
+
+      ul,
+      li,
+      ol {
+         padding: 0;
+         margin: 0;
+      }
+
+      li {
+         list-style: none;
+      }
+
+      a,
+      img {
+         border: 0;
+         outline: none;
+         text-decoration: none;
+      }
+
+      input::-moz-focus-inner {
+         border: 0;
+      }
+
+      bo {
+         outline: none;
+      }
+
+      img {
+         max-width: 65%;
+
+         vertical-align: bottom;
+      }
+
+      input,
+      select,
+      textarea,
+      button {
+         font-family: 'Muli', sans-serif;
+      }
+
+      input:focus,
+      select:focus,
+      textarea:focus,
+      button:focus {
+         outline: 0;
+      }
+
+      a {
+         color: inherit;
+         -webkit-transition: 0.5s;
+         -o-transition: 0.5s;
+         transition: 0.5s;
+      }
+
+
+      p {
+         margin-bottom: 1.5em;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+         color: #000;
+         font-family: "Quicksand", Arial, sans-serif;
+         font-weight: 400;
+         margin: 0 0 30px 0;
+      }
+
+
+      i.material-icons {
+         font-size: inherit;
+         line-height: inherit;
+      }
+
+      ::-webkit-scrollbar-track {
+         -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+         background-color: #F5F5F5;
+      }
+
+      ::-webkit-scrollbar {
+         width: 5px;
+         height: 5px;
+         background-color: #F5F5F5;
+      }
+
+      ::-webkit-scrollbar-thumb {
+
+         -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+         background-color: #777;
+      }
+
+      /*===========================================
+Text Styles CSS
+============================================*/
+      .t-title-size {
+         font-size: 18px;
+      }
+
+      .t-bold {
+         font-weight: 600;
+      }
+
+      .t-normal {
+         font-weight: normal;
+      }
+
+      .t-center {
+         text-align: center;
+      }
+
+      .t-right {
+         text-align: right;
+      }
+
+      .p-30 {
+         padding: 30px;
+      }
+
+
+      /* Display Styles */
+
+      .d-flex {
+         display: flex;
+      }
+
+      .d-flex-align-center {
+         display: flex;
+         align-items: center;
+         flex-direction: row;
+      }
+
+      .d-flex-align-center-column {
+         display: flex;
+         align-items: center;
+         flex-direction: column;
+      }
+
+      .flex-1 {
+         flex: 1;
+      }
+
+      .flex-2 {
+         flex: 2;
+      }
+
+      /* Page Styles */
+      .wraper {
+         width: 100%;
+         height: 100%;
+      }
+
+
+      .container_a {
+         height: 100%;
+         display: flex;
+         flex-direction: row;
+      }
+
+      .main-content {
+         flex: 1;
+         overflow-y: auto;
+         margin-left: 10px;
+         background: #fff;
+         border-left: 1px solid rgba(221, 221, 221, 0.38);
+      }
+
+      .section1 {
+         /* border: 20px solid rgba(231, 139, 74, 0.249);
+  border-radius: 15px; */
+         /* margin: 20px; */
+      }
+
+      .left-footer {
+         color: rgba(0, 0, 0, 0.6);
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-end;
+      }
+
+      .foot-contact,
+      .social-icons ul,
+      .copy-rights {
+         display: flex;
+         justify-content: flex-end;
+      }
+
+      .social-icons ul li {
+         display: flex;
+         justify-content: flex-end;
+         flex-direction: row;
+      }
+
+      .foot-contact ul {
+         display: flex;
+         flex-direction: column;
+      }
+
+      .foot-contact ul li {
+         justify-content: flex-end;
+         display: flex;
+         margin: 2px 0px;
+      }
+
+      .foot-contact {
+         margin: 5px 0px;
+      }
+
+
+
+      .social-icons ul li a {
+         padding: 5px 8px;
+         font-size: 16px;
+      }
+
+
+      .social-icons ul li a:hover {
+         color: #000;
+         transform: scale(1.2) translateY(-5px);
+      }
+
+      .user-profile {
+         padding-left: 10px;
+      }
+
+      .sm-text {
+         letter-spacing: 2.1px;
+         font-weight: normal;
+         color: #222222;
+         font-size: 14px;
+         font-family: "Roboto", sans-serif;
+         text-transform: uppercase;
+      }
+
+      .name {
+         font-size: 40px;
+         text-transform: uppercase;
+         margin: 15px 0px;
+         color: #222222;
+         font-family: "Roboto", sans-serif;
+         font-weight: 600;
+      }
+
+      .role {
+         font-size: 18px;
+         font-weight: 500;
+         font-family: "Roboto", sans-serif;
+         text-transform: uppercase;
+         margin-bottom: 20px;
+         color: #222222;
+      }
+
+      .text {
+
+         font-size: 15px;
+      }
+
+      .pr-list {
+         margin: 30px 0px;
+
+      }
+
+      .pr-list ul li {
+         margin-bottom: 8px;
+      }
+
+      .pr-list ul li i {
+         width: 18px;
+      }
+
+      .social-icons-head ul {
+         display: flex;
+      }
+
+      .social-icons-head ul li a {
+         padding: 5px 10px;
+         font-size: 22px;
+         transition: all .3s;
+         display: flex;
+      }
+
+      .social-icons-head {}
+
+      .social-icons-head ul li:nth-child(1) a {
+         padding-left: 0;
+      }
+
+      .social-icons-head ul li a:hover {
+         color: #000;
+         transform: scale(1.2) translateY(-5px);
+      }
+
+      .sec-title {
+         margin-bottom: 35px;
+      }
+
+      .pg-title {
+         font-size: 18px;
+         font-weight: 500;
+         text-transform: uppercase;
+         letter-spacing: 5px;
+         line-height: 1.8;
+         color: #000;
+      }
+
+      .pg-sub-title {
+         margin-bottom: 10px;
+         display: block;
+         font-size: 10px;
+         text-transform: uppercase;
+         color: #999999;
+         font-weight: 500;
+         letter-spacing: 5px;
+      }
+   </style>
+   <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+<!-- body -->
+
+<body class="main-layout position_head">
+   <!-- loader  -->
+   <div class="loader_bg">
+      <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+   </div>
+   <!-- end loader -->
+   <!-- header -->
+   <header>
+      <!-- header inner -->
+      <div class="header">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                  <div class="full">
+                     <div class="center-desk">
+                        <div class="logo">
+                           <a href="index.html"><img src="images/horizontal_farmshelogo.png" alt="#" width="200px"></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                  <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
+                        aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div class="collapse navbar-collapse" id="navbarsExample04">
+                        <ul class="navbar-nav mr-auto">
+                           <li class="nav-item">
+                              <a class="nav-link" href="index.html">Home</a>
+                           </li>
+                           <li class="nav-item active">
+                              <a class="nav-link " href="about.html">About</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="fruits.html">Our Fruits</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="shop.html">Shop</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="farmtour.html">Farm Tour</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="#">FeedBack</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <!-- end header inner -->
+   <!-- end header -->
+   <!-- about section -->
+   <div class="wraper">
+      <div class="container_a">
+         <div class="main-content">
+            <div class="section1 p-30">
+               <div class="d-flex-align-center">
+                  <div class="user-img flex-1"><img src="images/farmshelogo.png"></div>
+                  <div class="user-profile flex-1">
+                     <div class="pro-details">
+                        <div class="sm-text">HELLO EVERYBODY, I AM</div>
+                        <div class="name">Harsh Patel</div>
+                        <div class="role">onwer Of Farm</div>
+                     </div>
+                     <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quia
+                        distinctio placeat ducimus repellat dicta mollitia repudiandae, dolore ut animi?</div>
+                     <div class="pr-list">
+                        <ul>
+                           <li><i class="fa fa-calendar" aria-hidden="true"></i> 30th Mar, 2004</li>
+                           <li><i class="fa fa-phone" aria-hidden="true"></i> +91 9064987052 / +91 8656201653
+                           </li>
+                           <li><i class="fa fa-envelope" aria-hidden="true"></i> farmse@gmail.com</li>
+                           <li><i class="fa fa-map-marker" aria-hidden="true"></i> Anand,Gujarat</li>
+                        </ul>
+                     </div>
+                     <div class="social-icons-head">
+                        <ul>
+                           <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                           <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                           <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- about section -->
+   <!--  footer -->
+   <footer>
+      <div class="footer">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-8 offset-md-2">
+                  <ul class="location_icon">
+                     <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a><br> Anand,Gujarat</li>
+                     <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a><br> +91 8956534879</li>
+                     <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a><br> farmse@gmail.com</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="copyright">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <p>© 2022 All Rights Reserved.Design by HARSH PATEL</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- end footer -->
+   <!-- Javascript files-->
+   <script src="js/jquery.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/jquery-3.0.0.min.js"></script>
+   <!-- sidebar -->
+   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+   <script src="js/custom.js"></script>
+</body>
+
+</html>
